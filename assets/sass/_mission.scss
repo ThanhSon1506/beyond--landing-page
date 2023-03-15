@@ -1,0 +1,32 @@
+.mission {
+    padding: 117px 20px 89px;
+    background-color: #f4f8fd;
+    margin-bottom: var(--section-spacing);
+
+    &-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 26px;
+    }
+
+    &-content {
+        max-width: 502px;
+        width: 100%;
+    }
+
+    .global-heading {
+        max-width: 443px;
+        margin-bottom: 25px;
+    }
+
+    .global-caption {
+        margin-bottom: 18px;
+    }
+
+    .global-text {
+        margin-bottom: 34px;
+    }
+}
