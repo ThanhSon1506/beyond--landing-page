@@ -1,0 +1,52 @@
+.subscribe{
+    margin-bottom: var(--section-spacing);
+    &-container{
+        padding: 77px 0 116px;
+        background-color: $gray-dark--bg; 
+        border-radius: 67px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    &-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 796px;
+    }
+    &-content{
+        width: 100%;
+        max-width: 404px;
+    }
+    &-heading{
+        font-weight: 600;
+        font-size:48px;
+        line-height: 68px;
+        margin-bottom: 25px;
+        color: $gray-dark;
+    }
+    &-desc{
+        font-weight: 500;
+        font-size: 16px;
+        line-height:calc(24 / 16);
+        color: #787e86;
+        opacity: 0.8;
+        max-width: 338px;
+    }
+    &-form{
+        background: white;
+        border-radius: 26.5px;
+        display: flex;
+    }
+    &-input{
+        padding: 15px 20px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: "Poppins",sans-serif;
+        color: $gray-dark;
+        outline: none;
+        border: 0;
+        background: transparent;
+    }
+}

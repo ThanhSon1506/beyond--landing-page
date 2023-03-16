@@ -18,7 +18,7 @@
         position: relative;
         color: inherit;
         transition: all 0.2s linear;
-
+        display: block;
         &:before {
             content: "";
             position: absolute;
@@ -84,9 +84,6 @@
         gap: 0 36px;
     }
 
-    &-image {
-        transform: scaleX(1.1) translate(71px);
-    }
 }
 
 .watch {
@@ -106,5 +103,42 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+@media screen and (min-width: 1279.98px) {
+    .header{
+        &-image {
+            transform: scaleX(1.1);
+        }
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+  
+    .menu{
+        &--auth{
+            margin-left: auto;
+            padding-right: 20px;
+        }
+        margin: 0 auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 300px;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        z-index: 100;
+        align-items: stretch;
+        transition: all 0.2s linear;
+        transform: translateX(100%);
+        &-link{
+            padding: 15px;
+        }
+    }
+
+    .header{
+
     }
 }
