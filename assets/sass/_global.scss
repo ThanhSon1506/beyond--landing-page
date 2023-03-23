@@ -82,6 +82,14 @@ body {
 @media screen and (max-width: 767.98px) {
     .button{
         padding: 10px 20px;
+        font-size: 14px;    
+    }
+    .global-heading{
+        &--big{
+            font-size: 30px;
+        }
+    }
+    .global-text{
         font-size: 14px;
     }
 }

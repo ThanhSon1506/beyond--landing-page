@@ -10,4 +10,10 @@ $secondary-color: #5a76e5;
 $third-color: #F4A11A;
 :root {
     --section-spacing: 140px;
+    @media screen and (max-width: 1279px) {
+        --section-spacing: 70px;
+    }
+    @media screen and (max-width: 767px) {
+        --section-spacing: 40px;
+    }
 }

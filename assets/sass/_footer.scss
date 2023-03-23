@@ -1,0 +1,107 @@
+.footer{
+    &-container{
+        max-width: 1440px;
+        padding: 90px 144px 0px 170px;
+        background-color:#052347;
+    }
+    &-wrapper{
+        display: flex;
+        gap: 0 213px;
+        max-width: 1160px;
+        padding: 0 15px;
+    }
+    &-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 235px;
+        &--social{
+            display: flex;
+            gap: 12px;
+            .social--bg{
+                background-color:#049EFF;
+                padding: 10px;
+                width: 30px;
+                height: 30px;
+                border-radius: 100rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    &-list{
+        max-width: 678px;
+        display: flex;  
+        gap: 0 73px;
+        ul{
+            span{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: calc(35px / 18px);
+                color: #D9E1F0;
+            }
+            li:nth-of-type(1){
+                padding-top: 22px;
+            }  
+            li{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 37px;
+                color: #AFACCD;
+            }   
+        }
+       
+       
+    }
+    &-copyright{
+        margin-top: 48px;
+        border-top: 1px solid #11317C;
+        padding: 30px 0;
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            color: #8B9FCF;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        &-container{
+            padding: 45px 70px 0;
+        }
+        &-wrapper{
+            gap: 0 71px;
+        }
+        &-list{
+            gap: 0 36px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        &-wrapper{
+            flex-direction: column;
+        }
+        &-content{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+    }
+    @media screen and (max-width: 414px) {
+        &-content{
+            align-items:flex-start;
+        }
+        &-list{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    
+}

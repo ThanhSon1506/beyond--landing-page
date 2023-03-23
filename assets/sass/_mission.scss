@@ -29,4 +29,15 @@
     .global-text {
         margin-bottom: 34px;
     }
+    @media screen and (max-width: 1023.98px) {
+        padding: 70px 0;
+        &-container{
+            flex-direction: column;
+            gap: 30px;
+        }
+        &-content{
+            max-width: 100%;
+        }
+    }
+    
 }

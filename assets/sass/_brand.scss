@@ -6,4 +6,9 @@
     align-items: center;
     gap: 0 55px;
     margin-bottom: var(--section-spacing);
+    @media screen and (max-width: 1023.98px) {
+        gap: 0 15px;
+        padding: 20px;
+    }
+    
 }

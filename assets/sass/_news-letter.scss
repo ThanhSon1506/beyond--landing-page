@@ -1,7 +1,7 @@
 .subscribe{
     margin-bottom: var(--section-spacing);
     &-container{
-        padding: 77px 0 116px;
+        padding: 77px 20px 116px;
         background-color: $gray-dark--bg; 
         border-radius: 67px;
         display: flex;
@@ -10,7 +10,7 @@
     }
     &-main{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         max-width: 796px;
     }
@@ -37,6 +37,12 @@
         background: white;
         border-radius: 26.5px;
         display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 373px;
+    }
+    &-field{
+        flex: 1;
     }
     &-input{
         padding: 15px 20px;
@@ -48,5 +54,33 @@
         outline: none;
         border: 0;
         background: transparent;
+        width: 100%;
     }
+    @media screen and (max-width: 1023.98px) {
+        &-heading{
+            font-size: 30px;
+            line-height: 1.5;
+        }
+        &-container{
+            padding-top: 35px;
+            padding-bottom: 35px;
+            border-radius: 20px;
+        }
+    }
+    @media screen and (max-width: 767.98px) {
+        &-main{
+            flex-direction: column;
+            gap: 35px;
+            align-items: stretch;
+        }
+        &-main{
+            text-align: center;
+        }
+        &-form{
+            max-width: 100%;
+        }
+       
+    }
+    
+    
 }

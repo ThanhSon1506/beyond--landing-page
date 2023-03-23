@@ -5,10 +5,12 @@
     display: flex;
     align-items: center;
 }
-
+.toggle{
+    display: none;
+    margin-left: auto;
+}
 .menu {
     margin-left: auto;
-    margin-right: 100px;
     display: flex;
     align-items: center;
     gap: 0 38px;
@@ -43,10 +45,10 @@
     &--auth {
         display: flex;
         gap: 0 13px;
-
-        .auth--login {
-            padding: 15px 35px 16px 34px;
-        }
+        margin-left: 100px;
+        // .auth--login {
+        //     padding: 15px 35px 16px 34px;
+        // }
 
     }
 }
@@ -58,16 +60,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 0 38px;
-        padding: 0 20px;
-        max-width: 1160px;
-        margin: 0 auto;
-        // position: relative;
+        gap: 0 38px;    
     }
 
     &-content {
         width: 100%;
-        max-width: 496px;
     }
 
     &-heading {
@@ -105,6 +102,14 @@
         align-items: center;
     }
 }
+@media screen and (min-width: 1024px) {
+    .header{
+        &-content{
+            max-width: 496px;
+        }
+    }
+}
+
 @media screen and (min-width: 1279.98px) {
     .header{
         &-image {
@@ -117,8 +122,9 @@
   
     .menu{
         &--auth{
-            margin-left: auto;
-            padding-right: 20px;
+            padding-left: 15px;
+            margin-left: 0;
+            margin-top: 25px;
         }
         margin: 0 auto;
         position: fixed;
@@ -129,16 +135,38 @@
         flex-direction: column;
         background-color: white;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        z-index: 100;
+        z-index: 200;
         align-items: stretch;
         transition: all 0.2s linear;
         transform: translateX(100%);
         &-link{
             padding: 15px;
         }
+        &.is-show{
+            transform: translateX(0);
+        }
     }
 
     .header{
-
+        &-main{
+            flex-direction: column;
+        }
+    }
+    .toggle{
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header{
+        &-heading{
+            font-size: 35px;
+        }
+        &-actions{
+            flex-direction: column;
+            gap: 30px;
+        }
+        &-content{
+            order: 1;
+        }
     }
 }
